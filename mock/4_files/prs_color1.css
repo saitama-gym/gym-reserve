@@ -1,0 +1,337 @@
+/* 画面全体 */
+body.nomargin
+	{
+	background-color:white;
+	color:black;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	}
+/* ヘッダ */
+table.head
+	{
+	background-color:#98FB98;
+	}
+/* ヘッダ */
+table.head2
+	{
+	background-color:#98FB98;
+	}
+/* 利用者登録：左 */
+th.left
+	{
+	background-color:#D7FFD7;
+	}
+/* 利用者登録：右 */
+td.right
+	{
+	background-color:#FDF3D5;
+	}
+/* 一覧 table */
+table.tablelist
+	{
+	border:2px #1E90FF solid;
+	}
+/* 一覧 table */
+table.tablelist2
+	{
+	border:2px #1E90FF solid;
+	}
+/* 一覧 th */
+th.tablelist
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	background-color:#FFCCFF;
+	text-align:center;
+	}
+/* 一覧 th */
+th.tablelist2
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	text-align:center;
+	}
+/* 一覧 td */
+td.tablelist
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	}
+/* 空き一覧 table */
+table.akitablelist
+	{
+	border:2px #1E90FF solid;
+	}
+/* 空き一覧 table(複数施設:IE用) */
+table.akitablelist2
+	{
+	border:2px #1E90FF solid;
+	border-collapse:collapse;
+	}
+/* 空き一覧 th */
+th.akitablelist
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	background-color:#98FB98;
+	text-align:center;
+	}
+/* 空き一覧 th */
+th.akitablelist2
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	background-color:#E0FFFF;
+	text-align:center;
+	}
+/* 空き一覧 td */
+td.akitablelist
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	}
+/* 設備空き一覧 table */
+table.se_akitablelist
+	{
+	border:2px #1E90FF solid;
+	}
+/* 設備空き一覧(見出し) th */
+th.se_akitablelist
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	background-color:#FFC488;
+	text-align:center;
+	}
+/* 設備空き一覧(時間) th */
+th.se_akitablelist_time
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	background-color:#CCFFFF;
+	text-align:center;
+	}
+/* 設備空き一覧 td */
+td.se_akitablelist
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	}
+/* 設備空き一覧 tr(偶数) */
+tr.even
+	{
+	background-color:#FFFF99;
+	}
+/* 設備空き一覧 tr(奇数) */
+tr.uneven
+	{
+	background-color:#FFFFFF;
+	}
+/* 空き一覧一ヶ月 table */
+table.m_akitablelist
+	{
+	border:2px #1E90FF solid;
+	}
+/* 空き一覧 tr */
+tr.m_akitablelist
+	{
+	background-color:#E0FFFF;
+	}
+/* 空き一覧 th */
+th.m_akitablelist
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	text-align:center;
+	}
+/* 空き一覧(日曜) th */
+th.m_akitablelist_sun
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	text-align:center;
+	background-color:#FFDAB9;
+	}
+/* 空き一覧 td */
+td.m_akitablelist
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	text-align:center;
+	}
+/* 空き一覧(日曜) td */
+td.m_akitablelist_sun
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	text-align:center;
+	background-color:#FFDAB9;
+	}
+/* 空き一覧(月曜) td */
+td.m_akitablelist_mon
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	text-align:center;
+	}
+/* 空き一覧(火曜) td */
+td.m_akitablelist_tue
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	text-align:center;
+	}
+/* 空き一覧(水曜) td */
+td.m_akitablelist_wed
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	text-align:center;
+	}
+/* 空き一覧(木曜) td */
+td.m_akitablelist_thu
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	text-align:center;
+	}
+/* 空き一覧(金曜) td */
+td.m_akitablelist_fri
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	text-align:center;
+	}
+/* 空き一覧(土曜) td */
+td.m_akitablelist_sat
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	text-align:center;
+	background-color:#E0FFFF;
+	}
+/* 抽選選択状況一覧 table */
+table.lotselectlist
+	{
+	border:1px black solid;
+	border-collapse:collapse;
+	}
+/* 抽選選択状況一覧 th */
+th.lotselectlist
+	{
+	border:1px black solid;
+	text-align:center;
+	background-color:#FFDAB9;
+	padding:5px;
+	}
+/* 抽選選択状況一覧 td */
+td.lotselectlist
+	{
+	border:1px black solid;
+	padding:5px;
+	}
+/* 抽選空き一覧 table */
+table.lottablelist
+	{
+	border:2px #1E90FF solid;
+	}
+/* 抽選空き一覧 th */
+th.lottablelist
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	background-color:#98FB98;
+	text-align:center;
+	}
+/* 抽選空き一覧 th */
+th.lottablelist2
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	background-color:#E0FFFF;
+	text-align:center;
+	}
+/* 抽選空き一覧 td */
+td.lottablelist
+	{
+	padding:5px;
+	border:1px #1E90FF solid;
+	}
+/* 抽選申込一覧 table */
+table.lotapplylist
+	{
+	border:1px black solid;
+	border-collapse:collapse;
+	}
+/* 抽選申込一覧 th */
+th.lotapplylist
+	{
+	padding:5px;
+	border:1px black solid;
+	background-color:#F5F5DC;
+	text-align:center;
+	}
+/* 抽選申込一覧 th */
+th.lotapplylist2
+	{
+	padding:5px;
+	border:1px black solid;
+	background-color:#DDE5FF;
+	text-align:center;
+	}
+/* 抽選申込一覧 td */
+td.lotapplylist
+	{
+	padding:5px;
+	border:1px black solid;
+	}
+/* お知らせ */
+div.black
+	{
+	color:black;
+	}
+div.red
+	{
+	color:red;
+	}
+div.blue
+	{
+	color:blue;
+	}
+div.yellow
+	{
+	color:yellow;
+	}
+div.cyan
+	{
+	color:aqua;
+	}
+div.green
+	{
+	color:green;
+	}
+div.purple
+	{
+	color:purple;
+	}
+/* リンク色 */
+a
+	{
+	color:blue
+	}
+/* 入力域 */
+input
+	{
+	background-color:white;
+	color:black;
+	}
+textarea
+	{
+	background-color:white;
+	color:black;
+	}
+/* パンくず強調 */
+td.head_now
+	{
+	color:red;
+	}

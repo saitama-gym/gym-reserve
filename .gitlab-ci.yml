@@ -1,0 +1,19 @@
+# https://docs.gitlab.com/ce/ci/yaml/README.html
+# https://docs.gitlab.com/ce/ci/examples/artifactory_and_gitlab/index.html
+image: maven:latest
+
+variables:
+  MAVEN_CLI_OPTS: "--batch-mode"
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+cache:
+  paths:
+    - .m2/repository/
+    - target/
+
+test:
+  stage: test
+  script:
+    - mvn $MAVEN_CLI_OPTS compile test
+  only:
+    - api

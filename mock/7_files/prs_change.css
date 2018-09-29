@@ -1,0 +1,103 @@
+#fontChange ul
+	{
+	list-style-type: none;
+	}
+
+#fontChange li
+	{
+	float:left;
+	list-style-type: none;
+	}
+
+#fontChange li a
+	{
+	font-size:12px;				/* 文字の大きさ */
+	display:block;				/* ブロック要素にする */
+	width:20px;					/* ブロックの横幅 */
+	height:20px;				/* ブロックの縦幅 */
+	padding: 3px 1px 1px 0px;
+	margin:1px;
+	border:outset white 2px;	/* 枠の色 */
+	background-color:white;		/* 背景色 */
+	text-align:center;
+	color:black;
+	text-decoration:none;		/* アンカ削除 */
+	font-weight:bold;			/* 太字 */
+	}
+
+#colorChange ul
+	{
+	list-style-type: none;
+	}
+
+#colorChange li
+	{
+	float:left;
+	list-style-type: none;
+	}
+
+/*標準色 */
+#color1 a
+	{
+	font-size:12px;				/* 文字の大きさ */
+	display:block;				/* ブロック要素にする */
+	width:20px;					/* ブロックの横幅 */
+	height:20px;				/* ブロックの縦幅 */
+	padding: 3px 1px 1px 0px;
+	margin:1px;
+	border:outset white 2px;	/* 枠の色 */
+	background-color:white;		/* 背景色 */
+	text-align:center;
+	color:black;
+	text-decoration:none;		/* アンカ削除 */
+	font-weight:bold;			/* 太字 */
+	}
+
+#color2 a
+	{
+	font-size:12px;				/* 文字の大きさ */
+	display:block;				/* ブロック要素にする */
+	width:20px;					/* ブロックの横幅 */
+	height:20px;				/* ブロックの縦幅 */
+	padding: 3px 1px 1px 0px;
+	margin:1px;
+	border:outset white 2px;	/* 枠の色 */
+	background-color:black;		/* 背景色 */
+	text-align:center;
+	color:white;				/* 文字色 */
+	text-decoration:none;		/* アンカ削除 */
+	font-weight:bold;			/* 太字 */
+	}
+
+#color4 a
+	{
+	font-size:12px;				/* 文字の大きさ */
+	display:block;				/* ブロック要素にする */
+	width:20px;					/* ブロックの横幅 */
+	height:20px;				/* ブロックの縦幅 */
+	padding: 3px 1px 1px 0px;
+	margin:1px;
+	border:outset white 2px;	/* 枠の色 */
+	background-color:green;		/* 背景色 */
+	text-align:center;
+	color:white;				/* 文字色 */
+	text-decoration:none;		/* アンカ削除 */
+	font-weight:bold;			/* 太字 */
+	}
+
+#color5 a
+	{
+	font-size:12px;				/* 文字の大きさ */
+	display:block;				/* ブロック要素にする */
+	width:20px;					/* ブロックの横幅 */
+	height:20px;				/* ブロックの縦幅 */
+	padding: 3px 1px 1px 0px;
+	margin:1px;
+	border:outset white 2px;	/* 枠の色 */
+	background-color:yellow;	/* 背景色 */
+	text-align:center;
+	color:black;				/* 文字色 */
+	text-decoration:none;		/* アンカ削除 */
+	font-weight:bold;			/* 太字 */
+	}
+

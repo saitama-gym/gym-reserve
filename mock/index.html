@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0034)https://saitama.rsv.ws-scs.jp/web/ -->
+<html lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="expires" content="Sun, 10 Jan 1990 01:01:01 GMT">
+    <title>さいたま市　施設予約システム&nbsp;認証画面</title>
+    <link rel="stylesheet" type="text/css" href="./1_files/prs_web_common.css">
+    <link rel="stylesheet" type="text/css" id="csschange" href="./1_files/prs_color1.css">
+    <link rel="stylesheet" type="text/css" href="./1_files/prs_change.css">
+    <script type="text/javascript" src="./1_files/pawab2000.js"></script>
+    <script type="text/javascript" src="./1_files/paw_doaction.js"></script>
+    <script type="text/javascript" src="./1_files/paw_errormsg.js"></script>
+    <script type="text/javascript" src="./1_files/paw_common.js"></script>
+    <script type="text/javascript" src="./1_files/jquery.js"></script>
+    <script type="text/javascript" src="./1_files/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        var gTimerValue = 1800;
+        var gTimeOutAction = '/web/rsvWTransUserAttestationEndAction.do';
+        var gRsvWUserIdAttestationAction = '/web/rsvWUserAttestationAction.do';
+        var gRsvWTransUserAttestationHelpAction = '/web/rsvWTransUserAttestationHelpAction.do';
+        var gRsvWTransInstSrchVacantAction = '/web/rsvWTransInstSrchVacantAction.do';
+        var gRsvWTransEventSrchAction = '/web/rsvWTransEventSrchAction.do';
+        var gLotWTransLotListAction = '/web/lotWTransLotListAction.do';
+        var gRsvWUuserAttestationAction = '/web/rsvWUserAttestationAction.do';
+        var gRsvWTransUserRegistAction = '/web/rsvWTransUserRegistAction.do';
+        var gLotWTransLotAreaAction = '/web/lotWTransLotAreaAction.do';
+        var gRsvWTransInstSrchInstAction = '/web/rsvWTransInstSrchInstAction.do';
+        var gRsvWTransNoticePasswdAction = '/web/rsvWTransNoticePasswdAction.do';
+        var gRsvWTransContactAction = '/web/rsvWTransContactAction.do';
+        var gRsvWTransUserIdAction = '/web/rsvWTransUserIdAction.do';
+        var gRsvWTransPasswdAction = '/web/rsvWTransPasswdAction.do';
+        var gRsvWTransLoginAction = '/web/rsvWTransLoginAction.do';
+        var gRsvWTransLogoutAction = '/web/rsvWTransUserAttestationEndAction.do';
+        var gRsvWGetCancelRsvDataAction = '/web/rsvWGetCancelRsvDataAction.do';
+        var gRsvWGetConfirmRsvDataAction = '/web/rsvWGetConfirmRsvDataAction.do';
+        var gRsvWTransRsvEquipListAction = '/web/rsvWTransRsvEquipListAction.do';
+        var gLotWSetupLotAcceptAction = '/web/lotWSetupLotAcceptAction.do';
+        var gLotWTransLotCancelListAction = '/web/lotWTransLotCancelListAction.do';
+        var gLotWTransLotElectListAction = '/web/lotWTransLotElectListAction.do';
+        var gLotWTransCompleteLotListAction = '/web/lotWTransCompleteLotListAction.do';
+        var gRsvWTransUserSetupAction = '/web/rsvWTransUserSetupAction.do';
+        var gRsvWGetFoundTransAction = '/web/rsvWGetFoundTransAction.do';
+        var gRsvPawab4000DispAction =
+            '/web/rsvPawab4000DispAction.do;jsessionid=6TH62P36CLH32D34CCR34CHK60SJEC9GCGR3GC3270R65QUVN8BM008002T00000.SAITAMA1_web_cluster_001';
+        var gRsvBannerClickAction =
+            '/web/rsvWTransUserAttestationAction.do;jsessionid=6TH62P36CLH32D34CCR34CHK60SJEC9GCGR3GC3270R65QUVN8BM008002T00000.SAITAMA1_web_cluster_001';
+        var usersetpass = 3;
+        var userpassmin = 4;
+        var userpassmax = 12;
+        var useridmax = 8;
+    </script>
+</head>
+
+<body class="nomargin" onload="javascript:msgHide();javascript:errorMsg(&#39;&#39;, 0);startInitTimer()">
+    <script type="text/javascript">
+        loadMsgWrite(this.document);
+    </script>
+    <div id="loadmsg" style="position: absolute; top: 0px; left: 0px; right: 0px; width: 100%; visibility: hidden;">
+        <center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="./1_files/bi_nowloading.gif" alt="loading">
+        </center>
+    </div>
+    <div id="disp" style="visibility: inherit;">
+        <script type="text/javascript">
+            var gVacantFg = '1';
+        </script>
+        <center>
+            <form method="POST" action="https://saitama.rsv.ws-scs.jp/web/dummy" name="form1">
+                <table width="100%" class="head" border="0">
+                    <tbody>
+                        <tr>
+                            <td align="left">
+                                <strong>さいたま市</strong>
+                                <a href="https://saitama.rsv.ws-scs.jp/web/#main">
+                                    <img src="./1_files/1px.gif" border="0" alt="本文へスキップ">
+                                </a>
+                            </td>
+                            <td align="right">
+                                <script type="text/javascript" src="./1_files/paw_fontsize.js"></script>
+                                <script type="text/javascript">
+                                    var gSmallSize = '80%';
+                                    var gMiddleSize = '100%';
+                                    var gLargeSize = '120%';
+                                </script>
+                                <div style="width:367px;">
+                                    <ul id="fontChange" style="margin:0 0 0 0;padding:0">
+                                        <li id="li-label1">
+                                            <img src="./1_files/lw_fontchange1.gif" id="label1" alt="文字サイズ変更">
+                                        </li>
+                                        <li id="small">
+                                            <a href="javascript:void(0);" title="文字を小サイズに変更" style="margin:0 0 0 0;padding:0"
+                                                class="afont">小</a>
+                                        </li>
+                                        <li id="middle">
+                                            <a href="javascript:void(0);" title="文字を中サイズに変更" style="margin:0 0 0 0;padding:0"
+                                                class="afont">中</a>
+                                        </li>
+                                        <li id="large">
+                                            <a href="javascript:void(0);" title="文字を大サイズに変更" style="margin:0 0 0 0;padding:0"
+                                                class="afont">大</a>
+                                        </li>
+                                    </ul>
+                                    <ul id="colorChange" style="margin:0 0 0 0;padding:0">
+                                        <li id="li-label2">
+                                            <img src="./1_files/lw_colorchange1.gif" id="label2" alt="文字色、背景色を変更">
+                                        </li>
+                                        <li id="color1">
+                                            <a href="javascript:void(0);" title="標準色" style="margin:0 0 0 0;padding:0" class="acolor">あ</a>
+                                        </li>
+                                        <li id="color2">
+                                            <a href="javascript:void(0);" title="背景色黒、文字色白" style="margin:0 0 0 0;padding:0"
+                                                class="acolor">あ</a>
+                                        </li>
+                                        <li id="color4">
+                                            <a href="javascript:void(0);" title="背景色緑色、文字色白" style="margin:0 0 0 0;padding:0"
+                                                class="acolor">あ</a>
+                                        </li>
+                                        <li id="color5">
+                                            <a href="javascript:void(0);" title="背景色黄色、文字色黒" style="margin:0 0 0 0;padding:0"
+                                                class="acolor">あ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p align="left" class="pcontent"></p>
+                <center>
+                    <img src="./1_files/lw_web_tittle.gif" alt="さいたま市公共施設サービス">
+                </center>
+                <center>
+                    <table border="0">
+                        <tbody>
+                            <tr>
+                                <td valign="top">
+                                    <table cellspacing="8" cellpadding="0" width="780" border="2" align="center" class="tcontent">
+                                        <tbody>
+                                            <tr>
+                                                <td bgcolor="#CEF6CE" height="30" colspan="2">
+                                                    <table cellspacing="0" cellpadding="0" border="0" class="tcontent" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <font color="black">
+                                                                        <b>お知らせ</b>
+                                                                    </font>
+                                                                </td>
+                                                                <td align="right">
+                                                                    <a href="javascript:doMsgAction(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvPawab4000DispAction, &#39;00000000&#39;);">
+                                                                        <img src="./1_files/bw_allmsg.gif" alt="システム全般" border="0">
+                                                                    </a>
+                                                                    <a href="javascript:doMsgAction(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvPawab4000DispAction, &#39;00000001&#39;);">
+                                                                        <img src="./1_files/bw_newpublicmsg.gif" alt="公民館" border="0">
+                                                                    </a>
+                                                                    <a href="javascript:doMsgAction(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvPawab4000DispAction, &#39;00000002&#39;);">
+                                                                        <img src="./1_files/bw_hotelmsg.gif" alt="保養施設" border="0">
+                                                                    </a>
+                                                                    <a href="javascript:doMsgAction(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvPawab4000DispAction, &#39;00000003&#39;);">
+                                                                        <img src="./1_files/bw_newsportmsg.gif" alt="スポーツ" border="0">
+                                                                    </a>
+                                                                    <a href="javascript:doMsgAction(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvPawab4000DispAction, &#39;00000004&#39;);">
+                                                                        <img src="./1_files/bw_newcommunitymsg.gif" alt="コミュニティ"
+                                                                            border="0">
+                                                                    </a>
+                                                                    <a href="javascript:doMsgAction(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvPawab4000DispAction, &#39;00000005&#39;);">
+                                                                        <img src="./1_files/bw_culturemsg.gif" alt="文化" border="0">
+                                                                    </a>
+                                                                    <a href="javascript:doMsgAction(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvPawab4000DispAction, &#39;00000006&#39;);">
+                                                                        <img src="./1_files/bw_etsmsg.gif" alt="その他施設" border="0">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div id="overs" class="dcontent" style="height:100px; overflow:scroll; border-style:dotted; border-width:1px;"
+                                                        align="left">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="javaScript:sendNewsInfo(0)">2017/12/02 堀崎公園　テニスコート大会予備日の開放について</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javaScript:sendNewsInfo(1)">
+                                                                    <font color="Red">2017/12/02 ―重要―　西遊馬・宝来運動公園復旧に関してのお知らせ</font>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javaScript:sendNewsInfo(2)">
+                                                                    <font color="Red">2017/12/02 ―重要―荒川総合運動公園復旧に関してのお知らせ</font>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javaScript:sendNewsInfo(3)">2017/12/01 大戸公民館リニューアルオープンに伴う施設変更のお知らせ</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javaScript:sendNewsInfo(4)">2017/11/30 片柳コミュニティセンターの利用について</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="30%" align="center" valign="top" class="dcontent">
+                                                    <!--  情報照会メニュー -->
+                                                    <table border="0" cellpadding="5" cellspacing="0" class="tcontent">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" height="55" valign="bottom">
+                                                                    <img src="./1_files/lw_jouhousyoukai.gif" alt="情報照会メニュー">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" valign="top">
+                                                                    <table border="0" cellpadding="3" class="tcontent">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center">
+                                                                                    <a href="2.html">
+                                                                                        <img src="./1_files/bw_inst.gif" border="0"
+                                                                                            alt="施設の空き状況">
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center">
+                                                                                    <a href="javascript:canLogin(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gLotWTransLotListAction);">
+                                                                                        <img src="./1_files/bw_lotteylists.gif"
+                                                                                            border="0" alt="抽選の一覧">
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center">
+                                                                                    <a href="https://saitama.rsv.ws-scs.jp/user/view/faq/index.html"
+                                                                                        target="_blank">
+                                                                                        <img src="./1_files/bw_inquiry.gif" border="0"
+                                                                                            alt="よくある質問">
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" height="55" valign="bottom">
+                                                                    <img src="./1_files/lw_jouhousyoukai_2.gif" alt="">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" valign="top">
+                                                                    <table border="0" cellpadding="3" class="tcontent">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="center">
+                                                                                    <a href="javascript:canLogin(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvWTransUserRegistAction);">
+                                                                                        <img src="./1_files/bw_userregist.gif"
+                                                                                            border="0" alt="利用者登録">
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td width="70%" align="center" valign="top" class="dcontent">
+                                                    <table border="0" cellpadding="5" cellspacing="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" height="55" colspan="2" valign="bottom">
+                                                                    <img src="./1_files/lw_registuser.gif" alt="登録されている方の専用メニュー">
+                                                                </td>
+                                                                <td valign="bottom">&nbsp;&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="2">
+                                                                    <table border="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td valign="top">
+                                                                                    <table border="0" cellpadding="3" class="tcontent">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <a href="javascript:sendActionClassName(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvWTransLoginAction, &#39;SetupLotAcceptAction&#39;);">
+                                                                                                        <img src="./1_files/bw_lotteyapply.gif"
+                                                                                                            alt="抽選の申込み" border="0">
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <a href="javascript:sendActionClassName(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvWTransLoginAction, &#39;TransCompleteLotListAction&#39;);">
+                                                                                                        <img src="./1_files/bw_lotreceived.gif"
+                                                                                                            alt="抽選申込みの確認" border="0">
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <a href="javascript:sendActionClassName(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvWTransLoginAction, &#39;TransLotCancelListAction&#39;);">
+                                                                                                        <img src="./1_files/bw_lotteyapplycancel.gif"
+                                                                                                            alt="抽選申込みの取消" border="0">
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td valign="top">
+                                                                                                    <a href="javascript:sendActionClassName(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvWTransLoginAction, &#39;TransLotElectListAction&#39;);">
+                                                                                                        <img src="./1_files/bw_confirmed.gif"
+                                                                                                            alt="抽選結果の確認" border="0">
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td valign="top">
+                                                                                                    <a href="javascript:sendActionClassName(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvWTransLoginAction, &#39;TransUserSetupAction&#39;);">
+                                                                                                        <img src="./1_files/bw_favoriteset.gif"
+                                                                                                            alt="利用者個別設定" border="0">
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                                <td valign="top">
+                                                                                    <table border="0" cellpadding="3">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <a href="javascript:sendActionClassName(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvWTransLoginAction, &#39;TransInstSrchVacantAction&#39;);">
+                                                                                                        <img src="./1_files/bw_rsvapply.gif"
+                                                                                                            alt="予約の申込み" border="0">
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <a href="javascript:sendActionClassName(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvWTransLoginAction, &#39;GetConfirmRsvDataAction&#39;);">
+                                                                                                        <img src="./1_files/bw_rsvconfirmed.gif"
+                                                                                                            alt="予約の確認" border="0">
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <a href="javascript:sendActionClassName(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvWTransLoginAction, &#39;GetCancelRsvDataAction&#39;);">
+                                                                                                        <img src="./1_files/bw_rsvcancel.gif"
+                                                                                                            alt="予約の取消" border="0">
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td valign="top">
+                                                                                                    <a href="javascript:sendActionClassName(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvWTransLoginAction, &#39;TransRsvEquipListAction&#39;);">
+                                                                                                        <img src="./1_files/bw_equipmentrsv1.gif"
+                                                                                                            alt="設備の確認" border="0">
+                                                                                                    </a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td width="170" valign="top" rowspan="2" align="left">
+                                    <a href="http://www.city.saitama.jp/index.html" target="_blank">
+                                        <img src="./1_files/bw_homepage.gif" border="0" alt="さいたま市ホームページ">
+                                    </a>
+                                    <br>
+                                    <a href="http://gakushu.city.saitama.jp/" target="_blank">
+                                        <img src="./1_files/bw_learningsystem.gif" border="0" alt="生涯学習情報システムへ">
+                                    </a>
+                                    <br>
+                                    <a href="https://saitama.rsv.ws-scs.jp/user" target="_blank">
+                                        <img src="./1_files/bw_usersystem.gif" border="0" alt="高機能版へ">
+                                    </a>
+                                    <br>
+                                    <img src="./1_files/1px.gif" height="78" width="151" border="0" alt="">
+                                    <br>
+                                    <a href="javascript:clickBenner(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvBannerClickAction, &#39;http://mc.ai-egao.com&#39;, 1);">
+                                        <img src="./1_files/201710m&amp;c_e.jpg" height="65" width="151" border="0" alt="婚活教育体験スクール">
+                                    </a>
+                                    <br>
+                                    <a href="javascript:clickBenner(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvBannerClickAction, &#39;http://www.city.saitama.jp/005/002/006/001/p044555.html&#39;, 2);">
+                                        <img src="./1_files/banner.png" height="65" width="151" border="0" alt="">
+                                    </a>
+                                    <br>
+                                    <a href="javascript:clickBenner(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvBannerClickAction, &#39;http://www.city.saitama.jp/005/002/006/001/p044555.html&#39;, 3);">
+                                        <img src="./1_files/banner.png" height="65" width="151" border="0" alt="">
+                                    </a>
+                                    <br>
+                                    <a href="javascript:clickBenner(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvBannerClickAction, &#39;http://www.city.saitama.jp/005/002/006/001/p044555.html&#39;, 4);">
+                                        <img src="./1_files/banner.png" height="65" width="151" border="0" alt="">
+                                    </a>
+                                    <br>
+                                    <a href="javascript:clickBenner(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvBannerClickAction, &#39;http://www.city.saitama.jp/005/002/006/001/p044555.html&#39;, 5);">
+                                        <img src="./1_files/banner.png" height="65" width="151" border="0" alt="">
+                                    </a>
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;
+                                    <a href="javascript:clickBenner(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvBannerClickAction, &#39;http://www.city.saitama.jp/005/002/006/001/p044555.html&#39;, 6);">
+                                        <img src="./1_files/banner.png" height="65" width="151" border="0" alt="">
+                                    </a>
+                                    <a href="javascript:clickBenner(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvBannerClickAction, &#39;http://www.city.saitama.jp/005/002/006/001/p044555.html&#39;, 7);">
+                                        <img src="./1_files/banner.png" height="65" width="151" border="0" alt="">
+                                    </a>
+                                    <a href="javascript:clickBenner(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvBannerClickAction, &#39;http://www.city.saitama.jp/005/002/006/001/p044555.html&#39;, 8);">
+                                        <img src="./1_files/banner.png" height="65" width="151" border="0" alt="">
+                                    </a>
+                                    <a href="javascript:clickBenner(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvBannerClickAction, &#39;http://www.city.saitama.jp/005/002/006/001/p044555.html&#39;, 9);">
+                                        <img src="./1_files/banner.png" height="65" width="151" border="0" alt="">
+                                    </a>
+                                    <a href="javascript:clickBenner(((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1 ), gRsvBannerClickAction, &#39;http://www.city.saitama.jp/005/002/006/001/p044555.html&#39;, 10);">
+                                        <img src="./1_files/banner.png" height="65" width="151" border="0" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table width="780">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left">
+                                                    <div class="dcontent">広告及びそのリンク先のホームページの内容等についての責任は、広告主に帰属します。
+                                                        <br>また、さいたま市や各公共施設が推奨等をするものではありません。</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right">
+                                                    <div class="dcontent">
+                                                        <a href="http://www.city.saitama.jp/005/002/006/001/p044555.html" target="_blank">当サイトについて／広告の概要・募集状況等</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left">
+                                                    <div class="dcontent">■施設予約インフォメーションセンター
+                                                        <br>０１２０－３１０－９７０ 　受付時間：８：３０～１７：００ （土・日曜日・祝日を除く）</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="dcontent">
+                                                        <a href="https://saitama.rsv.ws-scs.jp/user/view/guide/env-spec.html"
+                                                            target="_blank">利用環境</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <a href="https://saitama.rsv.ws-scs.jp/user/view/privacy/index.html"
+                                                            target="_blank">個人情報の取り扱いについて</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <a href="https://saitama.rsv.ws-scs.jp/user/view/rules/index.html"
+                                                            target="_blank">システムご利用規則</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+                <input type="hidden" name="fcflg" value="">
+                <input type="hidden" name="displayNo" value="pawab2000">
+                <input type="hidden" name="e410000" value="利用者番号を入力して下さい。">
+                <input type="hidden" name="e410010" value="パスワードを入力して下さい。">
+                <input type="hidden" name="e410320" value="利用者番号は半角数字で入力して下さい。">
+                <input type="hidden" name="e410330" value="パスワードは半角数字で入力して下さい。">
+                <input type="hidden" name="e520760" value="パスワードは{0}桁以上で入力して下さい。">
+                <input type="hidden" name="e520770" value="パスワードは{0}桁以下で入力して下さい。">
+                <input type="hidden" name="e520780" value="パスワードは半角数字、半角英字の両方を使用して下さい。">
+                <input type="hidden" name="e520790" value="パスワードは半角数字を使用して下さい。">
+                <input type="hidden" name="e520800" value="パスワードは半角英数字を使用して下さい。">
+                <input type="hidden" name="e412070" value="ログアウトしますが宜しいでしょうか？">
+                <input type="hidden" name="vacantFg" value="">
+                <input type="hidden" name="actionClassName" value="">
+                <input type="hidden" name="selIkbn" value="">
+                <input type="hidden" name="wmsgIndex" value="">
+                <input type="hidden" name="loginJKey" value="5753cc195e7a13791f29fe7832c9dc68830114402687be4881165bad184fa617c4b79b8255b2c33fa8cfd3c21e19fe235c6fd2a2365c98acb4890b2a62e24bca">
+                <input type="hidden" name="selectBennerNo" value="0">
+            </form>
+        </center>
+        <script type="text/javascript">
+            endTagWrite(this.document);
+        </script>
+    </div>
+    <noscript>このページではJavaScriptを使用しています。</noscript>
+    <div style="position:relative; top:0px; left:0px;">
+        <font size="1">*</font>
+    </div>
+</body>
+
+</html>

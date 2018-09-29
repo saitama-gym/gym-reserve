@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0061)https://saitama.rsv.ws-scs.jp/web/rsvWInstSrchVacantAction.do -->
+<html lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <link rel="stylesheet" type="text/css" href="./9_files/prs_web_common.css">
+    <link rel="stylesheet" type="text/css" id="csschange" href="./9_files/prs_color1.css">
+    <link rel="stylesheet" type="text/css" href="./9_files/prs_change.css">
+    <script type="text/javascript" src="./9_files/paw_doaction.js"></script>
+    <script type="text/javascript" src="./9_files/paw_common.js"></script>
+    <script type="text/javascript" src="./9_files/paw_errormsg.js"></script>
+    <script type="text/javascript" src="./9_files/prwca1000.js"></script>
+    <script type="text/javascript" src="./9_files/jquery.js"></script>
+    <script type="text/javascript" src="./9_files/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        var gRsvWInstSrchVacantSelectionAction = '/web/rsvWInstSrchVacantSelectionAction.do';
+        var gRsvWInstRsvFieldAction = '/web/rsvWInstRsvFieldAction.do';
+        var gRsvWTransInstSrchVacantAction = '/web/rsvWInstSrchVacantAction.do';
+        var gRsvWInstTempRsvApplyAction = '/web/rsvWInstTempRsvApplyAction.do';
+        var gRsvWUserAttestationPageMoveAction = '/web/rsvWUserAttestationPageMoveAction.do';
+        var gRsvWTransGuideAction = '/web/rsvWTransGuideAction.do';
+        var gRsvWInstSrchVacantBackAction = '/web/rsvWInstSrchVacantBackAction.do';
+        var gRsvWTransUserAttestationEndAction = '/web/rsvWTransUserAttestationEndAction.do';
+        var gRsvWInstSrchVacantStopApplyAction = '/web/rsvWInstSrchVacantStopApplyAction.do';
+        var gRsvWEquipSrchVacantAction = '/web/rsvWEquipSrchVacantAction.do';
+        var gRsvWTransUserLoginAction = '/web/rsvWTransUserLoginAction.do';
+        var gRsvWTransRegistDetailAction = '/web/rsvWTransRegistDetailAction.do';
+        var gSrchSelectInstNo = 2;
+        var gSrchSelectInstMax = 3;
+
+        function selectDisp() {}
+    </script>
+    <!-- pawzz1000 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="expires" content="Sun, 10 Jan 1990 01:01:01 GMT">
+    <title>さいたま市　施設予約システム&nbsp;施設空き状況画面時間帯貸し</title>
+    <script type="text/javascript">
+        var gTimerValue = 1800;
+        var gTimeOutAction = '/web/rsvWTransUserAttestationEndAction.do';
+    </script>
+</head>
+
+<body class="nomargin" onload="javascript:msgHide();javascript:errorMsg(&#39;&#39;, 0 );confirmMsg(&#39;&#39;,(_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1, gRsvWTransRegistDetailAction);startInitTimer()">
+    <script type="text/javascript">
+        loadMsgWrite(this.document);
+    </script>
+    <div id="loadmsg" style="position: absolute; top: 0px; left: 0px; right: 0px; width: 100%; visibility: hidden;">
+        <center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="./9_files/bi_nowloading.gif" alt="loading">
+        </center>
+    </div>
+    <div id="disp" style="visibility: inherit;">
+        <center>
+            <form name="form1" method="post">
+                <table width="100%" class="head" border="0">
+                    <tbody>
+                        <tr>
+                            <td align="left">
+                                <div class="dcontent">
+                                    <strong>さいたま市</strong>
+                                    <a href="https://saitama.rsv.ws-scs.jp/web/rsvWInstSrchVacantAction.do#main">
+                                        <img src="./9_files/1px.gif" border="0" alt="本文へスキップ">
+                                    </a>
+                                    <a href="https://saitama.rsv.ws-scs.jp/web/rsvWInstSrchVacantAction.do#main2">
+                                        <img src="./9_files/1px.gif" border="0" alt="空き状況の表へスキップ">
+                                    </a>
+                                </div>
+                            </td>
+                            <td align="right">
+                                <script type="text/javascript" src="./9_files/paw_fontsize.js"></script>
+                                <script type="text/javascript">
+                                    var gSmallSize = '80%';
+                                    var gMiddleSize = '100%';
+                                    var gLargeSize = '120%';
+                                </script>
+                                <div style="width:367px;">
+                                    <ul id="fontChange" style="margin:0 0 0 0;padding:0">
+                                        <li id="li-label1">
+                                            <img src="./9_files/lw_fontchange1.gif" id="label1" alt="文字サイズ変更">
+                                        </li>
+                                        <li id="small">
+                                            <a href="javascript:void(0);" title="文字を小サイズに変更" style="margin:0 0 0 0;padding:0"
+                                                class="afont">小</a>
+                                        </li>
+                                        <li id="middle">
+                                            <a href="javascript:void(0);" title="文字を中サイズに変更" style="margin:0 0 0 0;padding:0"
+                                                class="afont">中</a>
+                                        </li>
+                                        <li id="large">
+                                            <a href="javascript:void(0);" title="文字を大サイズに変更" style="margin:0 0 0 0;padding:0"
+                                                class="afont">大</a>
+                                        </li>
+                                    </ul>
+                                    <ul id="colorChange" style="margin:0 0 0 0;padding:0">
+                                        <li id="li-label2">
+                                            <img src="./9_files/lw_colorchange1.gif" id="label2" alt="文字色、背景色を変更">
+                                        </li>
+                                        <li id="color1">
+                                            <a href="javascript:void(0);" title="標準色" style="margin:0 0 0 0;padding:0" class="acolor">あ</a>
+                                        </li>
+                                        <li id="color2">
+                                            <a href="javascript:void(0);" title="背景色黒、文字色白" style="margin:0 0 0 0;padding:0"
+                                                class="acolor">あ</a>
+                                        </li>
+                                        <li id="color4">
+                                            <a href="javascript:void(0);" title="背景色緑色、文字色白" style="margin:0 0 0 0;padding:0"
+                                                class="acolor">あ</a>
+                                        </li>
+                                        <li id="color5">
+                                            <a href="javascript:void(0);" title="背景色黄色、文字色黒" style="margin:0 0 0 0;padding:0"
+                                                class="acolor">あ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" width="50%" colspan="2">
+                                <table border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="3.html">
+                                                    <img src="./9_files/bw_return.gif" alt="もどる" border="0">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:doAction((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1, gRsvWTransUserAttestationEndAction);">
+                                                    <img src="./9_files/bw_end.gif" alt="終了" border="0">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:doAction((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1, gRsvWTransGuideAction);">
+                                                    <img src="./9_files/bw_guide.gif" alt="案内" border="0">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" colspan="2">
+                                <table border="0" class="head">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="./9_files/1px.gif" border="0" alt="ここからパンくずリスト">複合検索条件</td>
+                                            <td>＞</td>
+                                            <td class="head_now">
+                                                <img src="./9_files/1px.gif" border="0" alt="現在位置">
+                                                <strong>一週間検索結果</strong>
+                                                <img src="./9_files/1px.gif" border="0" alt="パンくずリストここまで">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p align="left" class="pcontent">
+                    <a name="main">
+                        <img src="./9_files/1px.gif" border="0" alt="ここから本文です">
+                    </a>
+                    <br>施設の空き状況です。
+                    <br>
+                </p>
+                <table border="0">
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td nowrap="" align="left">&nbsp;</td>
+                            <td align="right">
+                                <table cellspacing="5" cellpadding="0" align="center" border="0" class="tcontent">
+                                    <tbody>
+                                        <tr>
+                                            <td>浦和駒場体育館
+                                                <br>競技場１／２面</td>
+                                            <td>
+                                                <a href="javascript:doTransInstSrchVacantTzoneAction((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1, gRsvWTransInstSrchVacantAction, 5, gSrchSelectInstNo, gSrchSelectInstMax);">
+                                                    <img src="./9_files/bw_previnstitutionl.gif" alt="前の施設" border="0">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="./9_files/bw_nextinvalidinstitutionl.gif" alt="">
+                                            </td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td valign="bottom">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td valign="top" nowrap="" align="left">
+                                <a name="main2">
+                                    <img src="./9_files/1px.gif" border="0" alt="ここから空き状況の表です">
+                                </a>
+                            </td>
+                            <td valign="top" colspan="3" align="left">
+                                <table border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a name="0"></a>
+                                                <a name="1"></a>
+                                                <a name="2"></a>
+                                                <a name="3"></a>
+                                                <a name="4"></a>
+                                                <a name="5"></a>
+                                                <table class="akitablelist">
+                                                    <caption>
+                                                        <a href="http://urawakomatai.com/" target="new_window">浦和駒場体育館</a>第２体育室&nbsp;空き状況</caption>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="8">
+                                                                <table style="border:2px #ff0000 solid;" width="100%" class="tcontent">
+                                                                    <tbody>
+                                                                        <tr style="border: 0px">
+                                                                            <td style="border: 0px" align="center">施設情報や利用時間の詳細については、上記名称部分をクリックして施設の案内ページをご覧ください</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="akitablelist">2017年</th>
+                                                            <th class="akitablelist">12月2日
+                                                                <br>土曜日</th>
+                                                            <th class="akitablelist">12月3日
+                                                                <br>日曜日</th>
+                                                            <th class="akitablelist">12月9日
+                                                                <br>土曜日</th>
+                                                            <th class="akitablelist">12月10日
+                                                                <br>日曜日</th>
+                                                            <th class="akitablelist">12月16日
+                                                                <br>土曜日</th>
+                                                            <th class="akitablelist">12月17日
+                                                                <br>日曜日</th>
+                                                            <th class="akitablelist">12月23日
+                                                                <br>土曜日</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="akitablelist2">９～</th>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="0_0" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="0_1" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="0_2" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="0_3" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="0_4" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="0_5" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="0_6" border="0" alt="予約あり">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="akitablelist2">１１～</th>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_emptybs.gif" name="1_0" border="0" alt="空き">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="1_1" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="1_2" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="1_3" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="1_4" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="1_5" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="1_6" border="0" alt="予約あり">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="akitablelist2">１３～</th>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="2_0" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="2_1" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="2_2" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="2_3" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="2_4" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="2_5" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="2_6" border="0" alt="予約あり">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="akitablelist2">１５～</th>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="3_0" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="3_1" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="3_2" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="3_3" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="3_4" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="3_5" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="3_6" border="0" alt="予約あり">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="akitablelist2">１７～</th>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="4_0" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="4_1" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="4_2" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="4_3" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="4_4" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="4_5" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="4_6" border="0" alt="予約あり">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="akitablelist2">１９～</th>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="5_0" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="5_1" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="5_2" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="5_3" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="5_4" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="5_5" border="0" alt="予約あり">
+                                                            </td>
+                                                            <td nowrap="" class="akitablelist" align="center">
+                                                                <img src="./9_files/lw_finishs.gif" name="5_6" border="0" alt="予約あり">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td valign="top" width="150">
+                                                <br>
+                                                <br>
+                                                <table border="0" cellspacing="0" cellpadding="0" class="tcontent">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./9_files/lw_0.gif" align="middle" alt="空きのマーク">
+                                                            </td>
+                                                            <td>空き</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./9_files/lw_100.gif" align="middle" alt="予約ありのマーク">
+                                                            </td>
+                                                            <td>予約あり</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./9_files/lw_aki2.gif" align="middle" alt="休館日のマーク">
+                                                            </td>
+                                                            <td>休館日</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./9_files/lw_aki1.gif" align="middle" alt="保守日のマーク">
+                                                            </td>
+                                                            <td>保守日</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./9_files/lw_aki3.gif" align="middle" alt="一般開放のマーク">
+                                                            </td>
+                                                            <td>一般開放</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./9_files/lw_aki4.gif" align="middle" alt="雨天のマーク">
+                                                            </td>
+                                                            <td>雨天</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./9_files/lw_kikangais.gif" align="middle" alt="受付期間外のマーク">
+                                                            </td>
+                                                            <td>受付期間外</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./9_files/lw_600.gif" align="middle" alt="時間外のマーク">
+                                                            </td>
+                                                            <td>時間外</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./9_files/lw_aki10.gif" align="middle" alt="取消処理中のマーク">
+                                                            </td>
+                                                            <td>取消処理中</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2">
+                                <table border="0" class="tcontent">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="javascript:doTransInstSrchVacantTzoneAction((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1, gRsvWTransInstSrchVacantAction, 1, gSrchSelectInstNo, gSrchSelectInstMax);">
+                                                    <img src="./9_files/bw_beforemonth2.gif" alt="前の月" align="middle" border="0">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:doTransInstSrchVacantTzoneAction((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1, gRsvWTransInstSrchVacantAction, 3, gSrchSelectInstNo, gSrchSelectInstMax);">
+                                                    <img src="./9_files/bw_prevweeks.gif" alt="前の週" align="middle" border="0">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:doTransInstSrchVacantTzoneAction((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1, gRsvWTransInstSrchVacantAction, 4, gSrchSelectInstNo, gSrchSelectInstMax);">
+                                                    <img src="./9_files/bw_nextweeks.gif" alt="次の週" align="middle" border="0">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:doTransInstSrchVacantTzoneAction((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1, gRsvWTransInstSrchVacantAction, 2, gSrchSelectInstNo, gSrchSelectInstMax);">
+                                                    <img src="./9_files/bw_nextmonth1.gif" alt="次の月" align="middle" border="0">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                                <p align="left" class="pcontent">予約をされる方は
+                                    <a href="javascript:doAction((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1, gRsvWTransUserLoginAction);">ログイン</a>を行ってください。</p>
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="hidden" name="displayNo" value="prwca1000">
+                <input type="hidden" name="selectItems" value="">
+                <input type="hidden" name="selectName" value="">
+                <input type="hidden" name="transVacantMode" value="6">
+                <input type="hidden" name="srchSelectInstNo" value="2">
+                <input type="hidden" name="selectSize" value="0">
+                <input type="hidden" name="e410300" value="施設を選択して下さい。">
+                <input type="hidden" name="e512060" value="選択情報をリセットしてもよろしいですか？">
+                <input type="hidden" name="checkMsg" value="">
+                <input type="hidden" name="fromDisplayNo" value="prwca1000">
+            </form>
+        </center>
+        <script type="text/javascript">
+            endTagWrite(this.document);
+        </script>
+    </div>
+    <noscript>このページではJavaScriptを使用しています。</noscript>
+</body>
+
+</html>

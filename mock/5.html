@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0065)https://saitama.rsv.ws-scs.jp/web/rsvWTransInstSrchBuildAction.do -->
+<html lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <link rel="stylesheet" type="text/css" href="./5_files/prs_web_common.css">
+    <link rel="stylesheet" type="text/css" id="csschange" href="./5_files/prs_color1.css">
+    <link rel="stylesheet" type="text/css" href="./5_files/prs_change.css">
+    <script type="text/javascript" src="./5_files/paw_doaction.js"></script>
+    <script type="text/javascript" src="./5_files/paw_common.js"></script>
+    <script type="text/javascript" src="./5_files/paw_errormsg.js"></script>
+    <script type="text/javascript" src="./5_files/prwbb2000.js"></script>
+    <script type="text/javascript" src="./5_files/jquery.js"></script>
+    <script type="text/javascript" src="./5_files/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        var gRsvWTransInstSrchAreaPageMoveAction = '/web/rsvWTransInstSrchAreaPageMoveAction.do';
+        var gRsvWTransUserAttestationEndAction = '/web/rsvWTransUserAttestationEndAction.do';
+        var gRsvWUserAttestationPageMoveAction = '/web/rsvWUserAttestationPageMoveAction.do';
+        var gRsvWTransInstSrchPpsPageMoveAction = '/web/rsvWTransInstSrchPpsPageMoveAction.do';
+        var gRsvWTransGuideAction = '/web/rsvWTransGuideAction.do';
+        var gRsvWTransInstSrchMultipleAction = '/web/rsvWTransInstSrchMultipleAction.do';
+        var gRsvWTransInstSrchInstAction = '/web/rsvWTransInstSrchInstAction.do';
+        var gRsvWTransRegistDetailAction = '/web/rsvWTransRegistDetailAction.do';
+    </script>
+    <!-- pawzz1000 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="expires" content="Sun, 10 Jan 1990 01:01:01 GMT">
+    <title>さいたま市　施設予約システム&nbsp;館選択画面</title>
+    <script type="text/javascript">
+        var gTimerValue = 1800;
+        var gTimeOutAction = '/web/rsvWTransUserAttestationEndAction.do';
+    </script>
+</head>
+
+<body class="nomargin" onload="javascript:msgHide();javascript:errorMsg(&#39;&#39;, 0 );confirmMsg(&#39;&#39;,(_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1, gRsvWTransRegistDetailAction);startInitTimer()">
+    <script type="text/javascript">
+        loadMsgWrite(this.document);
+    </script>
+    <div id="loadmsg" style="position: absolute; top: 0px; left: 0px; right: 0px; width: 100%; visibility: hidden;">
+        <center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="./5_files/bi_nowloading.gif" alt="loading">
+        </center>
+    </div>
+    <div id="disp" style="visibility: inherit;">
+        <center>
+            <form name="form1" method="post">
+                <table width="100%" class="head" border="0">
+                    <tbody>
+                        <tr>
+                            <td align="left">
+                                <div class="dcontent">
+                                    <strong>さいたま市</strong>
+                                    <a href="https://saitama.rsv.ws-scs.jp/web/rsvWTransInstSrchBuildAction.do#main">
+                                        <img src="./5_files/1px.gif" border="0" alt="本文へスキップ">
+                                    </a>
+                                </div>
+                            </td>
+                            <td align="right">
+                                <script type="text/javascript" src="./5_files/paw_fontsize.js"></script>
+                                <script type="text/javascript">
+                                    var gSmallSize = '80%';
+                                    var gMiddleSize = '100%';
+                                    var gLargeSize = '120%';
+                                </script>
+                                <div style="width:367px;">
+                                    <ul id="fontChange" style="margin:0 0 0 0;padding:0">
+                                        <li id="li-label1">
+                                            <img src="./5_files/lw_fontchange1.gif" id="label1" alt="文字サイズ変更">
+                                        </li>
+                                        <li id="small">
+                                            <a href="javascript:void(0);" title="文字を小サイズに変更" style="margin:0 0 0 0;padding:0"
+                                                class="afont">小</a>
+                                        </li>
+                                        <li id="middle">
+                                            <a href="javascript:void(0);" title="文字を中サイズに変更" style="margin:0 0 0 0;padding:0"
+                                                class="afont">中</a>
+                                        </li>
+                                        <li id="large">
+                                            <a href="javascript:void(0);" title="文字を大サイズに変更" style="margin:0 0 0 0;padding:0"
+                                                class="afont">大</a>
+                                        </li>
+                                    </ul>
+                                    <ul id="colorChange" style="margin:0 0 0 0;padding:0">
+                                        <li id="li-label2">
+                                            <img src="./5_files/lw_colorchange1.gif" id="label2" alt="文字色、背景色を変更">
+                                        </li>
+                                        <li id="color1">
+                                            <a href="javascript:void(0);" title="標準色" style="margin:0 0 0 0;padding:0" class="acolor">あ</a>
+                                        </li>
+                                        <li id="color2">
+                                            <a href="javascript:void(0);" title="背景色黒、文字色白" style="margin:0 0 0 0;padding:0"
+                                                class="acolor">あ</a>
+                                        </li>
+                                        <li id="color4">
+                                            <a href="javascript:void(0);" title="背景色緑色、文字色白" style="margin:0 0 0 0;padding:0"
+                                                class="acolor">あ</a>
+                                        </li>
+                                        <li id="color5">
+                                            <a href="javascript:void(0);" title="背景色黄色、文字色黒" style="margin:0 0 0 0;padding:0"
+                                                class="acolor">あ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" colspan="2">
+                                <table border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="javascript:sendSubmmitMode((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1, gRsvWTransInstSrchMultipleAction, 2);">
+                                                    <img src="./5_files/bw_return.gif" alt="もどる" border="0">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:doAction((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1, gRsvWTransUserAttestationEndAction);">
+                                                    <img src="./5_files/bw_end.gif" alt="終了" border="0">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:doAction((_dom == 3) ? document.layers[&#39;disp&#39;].document.form1 : document.form1, gRsvWTransGuideAction);">
+                                                    <img src="./5_files/bw_guide.gif" alt="案内" border="0">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" colspan="2">
+                                <table align="left" border="0" class="head">
+                                    <tbody>
+                                        <tr></tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p align="left" class="pcontent">
+                    <a name="main">
+                        <img src="./5_files/1px.gif" border="0" alt="ここから本文です">
+                    </a>
+                    <br>館を選択して下さい。</p>
+                <br>
+                <br>
+                <center>
+                    <img src="./5_files/lw_bld1.gif" alt="館一覧">
+                </center>
+                <br>
+                <table cellpadding="15" border="0" class="tcontent">
+                    <tbody>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1000&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">生涯学習総合センター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1010&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">指扇公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1020&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">馬宮公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1030&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">植水公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1040&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">内野公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1050&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大砂土公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1060&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">日進公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1070&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">宮原公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1080&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">植竹公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1090&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">桜木公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1100&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大宮南公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1110&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大宮中部公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1120&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大宮北公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1130&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">三橋公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1140&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大成公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1150&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大宮東公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1160&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大砂土東公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1170&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">片柳公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1180&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">七里公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1190&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">春岡公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1200&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">鈴谷公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1210&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大戸公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1220&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">与野本町公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1230&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">上落合公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1240&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">下落合公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1250&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">田島公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1260&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">土合公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1270&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大久保公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1280&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">栄和公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1290&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大久保東公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1300&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">岸町公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1310&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">領家公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1320&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">浦和南公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1330&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">上木崎公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1340&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大東公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1350&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">仲本公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1360&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">針ヶ谷公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1370&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">本太公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1380&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">仲町公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1390&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">常盤公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1400&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">北浦和公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1410&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">南箇公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1420&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">文蔵公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1430&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">南浦和公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1440&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">谷田公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1450&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">六辻公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1460&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">西浦和公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1470&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">別所公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1480&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">東浦和公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1490&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">善前公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1500&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大古里公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1510&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">三室公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1525&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">尾間木公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1530&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">原山公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1540&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">美園公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1550&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">岩槻本丸公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1560&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">岩槻本町公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;1570&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">岩槻南部公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1580&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">岩槻北部公民館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;1590&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">岩槻城址公民館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;2000&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">ホテル南郷</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;2010&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">六日町山の家</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;2020&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">新治ファミリーランド</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;3000&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">浦和駒場体育館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;3010&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大宮体育館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;3020&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">与野体育館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;3030&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">浦和西体育館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;3040&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">サイデン化学アリーナ／記念総合</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;3050&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大宮武道館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;4000&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">浦和総合運動場</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4010&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">駒場運動公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4020&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">荒川総合運動公園</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;4030&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">三浦運動公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4040&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大和田公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4050&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">西遊馬公園</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;4060&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">三橋総合公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4070&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">堀崎公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4080&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">天沼テニス公園</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;4090&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">宝来運動公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4100&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">与野中央公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4110&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">八王子公園</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;4120&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">さくら草公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4130&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">荒川彩湖公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4140&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">東大宮中央公園</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;4150&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大平公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4160&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">観音寺下公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4170&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">佐知川公園</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;4180&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">土呂公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4190&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">春岡中央公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4200&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">七里総合公園</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;4210&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">砂中央公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4220&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">西堀高沼公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4230&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">秋葉の森総合公園</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;4240&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">上落合北公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4250&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大原テニス公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4260&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">岩槻城址公園</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;4270&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">岩槻諏訪公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4280&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">岩槻文化公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4290&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">川通公園</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;4300&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">北部工業団地記念公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4310&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大間木公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;4320&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">見沼臨時グラウンド</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;4330&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大谷口公園</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5000&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">馬宮コミュニティセンター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5010&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">西部文化センター</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;5020&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">宮原コミュニティセンター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5030&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">日進公園コミュニティセンター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5040&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">大宮工房館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;5050&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">高鼻コミュニティセンター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5060&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">東大宮コミュニティセンター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5070&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">七里コミュニティセンター</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;5080&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">片柳コミュニティセンター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5090&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">与野本町コミュニティセンター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5100&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">上峰コミュニティホール</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;5110&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">西与野コミュニティホール</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5120&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">下落合コミュニティセンター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5130&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">浦和コミュニティセンター</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;5140&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">南浦和コミュニティセンター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5150&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">武蔵浦和コミュニティセンター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5160&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">美園コミュニティセンター</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;5170&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">コミュニティセンターいわつき</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5180&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">岩槻駅東口コミュニティセンター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;5190&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">ふれあいプラザいわつき</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;6000&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">さいたま市文化センター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;6010&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">市民会館うらわ</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;6020&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">市民会館おおみや</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;6030&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">市民会館いわつき</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;6040&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">氷川の杜文化館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;6050&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">恭慶館</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;6060&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">プラザイースト</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;6070&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">プラザウエスト</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;6080&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">さいたま市プラザノース</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;7000&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">男女共同参画推進センター</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;7100&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">産業振興会館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;7200&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">産業文化センター</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <a href="3.html#39;7300&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">青少年宇宙科学館</a>
+                            </td>
+                            <td align="left">
+                                <a href="3.html#39;7400&#39;)">
+                                    <img src="./5_files/bw_buildingimg.gif" border="0" alt="">宇宙劇場</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="hidden" name="displayNo" value="prwbb2000">
+                <input type="hidden" name="selectAreaCd" value="0">
+                <input type="hidden" name="selectBldCd" value="0">
+                <input type="hidden" name="selectPpsdCd" value="0">
+                <input type="hidden" name="selectPpsCd" value="0">
+                <input type="hidden" name="selectPpsPpsdCd" value="0">
+                <input type="hidden" name="selectInstNo" value="0">
+                <input type="hidden" name="dispWeekNum" value="0">
+                <input type="hidden" name="dispWeek" value="0">
+                <input type="hidden" name="dispWeek" value="0">
+                <input type="hidden" name="dispWeek" value="0">
+                <input type="hidden" name="dispWeek" value="0">
+                <input type="hidden" name="dispWeek" value="0">
+                <input type="hidden" name="dispWeek" value="0">
+                <input type="hidden" name="dispWeek" value="0">
+                <input type="hidden" name="dispWeek" value="0">
+                <input type="hidden" name="submmitMode" value="1">
+                <input type="hidden" name="transVacantMode" value="8">
+                <input type="hidden" name="conditionMode" value="3">
+                <input type="hidden" name="dispSelectInstBldCd" value="0">
+                <input type="hidden" name="dispSelectInstCd" value="0">
+                <input type="hidden" name="selectCommunityManageCd" value="0">
+                <input type="hidden" name="selectCommunityPlaceCd" value="0">
+                <input type="hidden" name="checkMsg" value="">
+                <input type="hidden" name="fromDisplayNo" value="prwbb2000">
+            </form>
+        </center>
+        <script type="text/javascript">
+            endTagWrite(this.document);
+        </script>
+    </div>
+    <noscript>このページではJavaScriptを使用しています。</noscript>
+</body>
+
+</html>
